@@ -1,0 +1,10 @@
+{
+  "name": "acf672e4-b8cc-4947-8485-1af0a26f0701",
+  "displayName": "Request Fulfilled; End Session.",
+  "parameters": [ {
+    "id": "affirmative",
+    "entityType": "@affirmative"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 4
+}

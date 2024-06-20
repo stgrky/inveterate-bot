@@ -1,0 +1,44 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "yes",
+      "parameterId": "affirmative",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Yes",
+      "parameterId": "affirmative",
+      "auto": true
+    }, {
+      "text": ", that's all",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Yep",
+      "parameterId": "affirmative",
+      "auto": true
+    }, {
+      "text": ", that's it",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Yep",
+      "parameterId": "affirmative",
+      "auto": true
+    }, {
+      "text": "!",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

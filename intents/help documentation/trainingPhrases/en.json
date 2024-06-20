@@ -1,0 +1,19 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Help docs",
+      "parameterId": "categories",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "help",
+      "parameterId": "categories",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

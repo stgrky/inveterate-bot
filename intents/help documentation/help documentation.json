@@ -1,0 +1,10 @@
+{
+  "name": "de10508d-3899-41a1-99e1-cf785168db02",
+  "displayName": "help documentation",
+  "parameters": [ {
+    "id": "categories",
+    "entityType": "@devDocTypes"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 2
+}

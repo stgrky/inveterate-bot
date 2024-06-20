@@ -1,0 +1,15 @@
+{
+  "name": "a89203c9-42d9-4b01-a220-a15e65f782fa",
+  "displayName": "Help Docs Handling",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Help docs stuff here" ]
+      },
+      "languageCode": "en"
+    } ]
+  }
+}

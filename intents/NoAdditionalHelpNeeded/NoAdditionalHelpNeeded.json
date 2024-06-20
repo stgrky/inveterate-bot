@@ -1,0 +1,10 @@
+{
+  "name": "c2ee74db-6fd0-4f06-b635-fbf3537ac7a1",
+  "displayName": "NoAdditionalHelpNeeded",
+  "parameters": [ {
+    "id": "negative",
+    "entityType": "@negative"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 5
+}

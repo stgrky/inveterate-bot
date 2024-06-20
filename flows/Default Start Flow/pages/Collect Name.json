@@ -1,0 +1,68 @@
+{
+  "name": "e0c4a62f-0f7e-4a0b-b412-c3f9de29fae5",
+  "displayName": "Collect Name",
+  "form": {
+    "parameters": [ {
+      "displayName": "name",
+      "required": true,
+      "entityType": "@sys.person",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Hmmm, seems like you didn't input anything... what's your name again?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "c9917a5f-e485-4461-9a90-ae912ce4173f"
+        }, {
+          "event": "sys.no-input-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Still didn't catch that, please try to input your name!" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "82ba22c9-0059-4ada-80cd-1cdd57d48e1f"
+        }, {
+          "targetFlow": "Agent Escalation",
+          "event": "sys.no-input-3",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Ok I'm just going to get you connected with a representative to help further. Please hold. " ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "1f022644-1a15-41fb-9efd-eaceea79bb0a"
+        } ]
+      },
+      "redact": true
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Before we begin, what's your name?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Greeting + Purpose of Chat Discovery",
+    "name": "243aa091-e703-4242-9364-3c742b9cccae"
+  } ]
+}

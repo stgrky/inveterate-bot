@@ -1,0 +1,28 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Thanks for contacting ",
+      "auto": true
+    }, {
+      "text": "Inveterate",
+      "auto": true
+    }, {
+      "text": "! ",
+      "auto": true
+    }, {
+      "text": "How",
+      "auto": true
+    }, {
+      "text": " can I ",
+      "auto": true
+    }, {
+      "text": "help",
+      "auto": true
+    }, {
+      "text": " you?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

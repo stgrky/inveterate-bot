@@ -1,0 +1,10 @@
+{
+  "name": "3ce3672a-6e6d-470f-9368-04f8eefaeaba",
+  "displayName": "Merchant",
+  "parameters": [ {
+    "id": "categories",
+    "entityType": "@Categories"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 1
+}

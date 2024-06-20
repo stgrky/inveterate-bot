@@ -1,0 +1,48 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Na",
+      "parameterId": "negative",
+      "auto": true
+    }, {
+      "text": " bye",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm ok",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Nope",
+      "parameterId": "negative",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Na",
+      "parameterId": "negative",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "No",
+      "parameterId": "negative",
+      "auto": true
+    }, {
+      "text": ", I'm good",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}
