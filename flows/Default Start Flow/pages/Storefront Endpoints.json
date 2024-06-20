@@ -1,0 +1,68 @@
+{
+  "name": "54de2665-0407-4847-aa8a-83e4130725f4",
+  "displayName": "Storefront Endpoints",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Here are our storefront-facing API endpoints:" ]
+      },
+      "languageCode": "en"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "options": [ {
+            "anchor": {
+              "href": "https://help.inveterate.com/dev/api-reference-docs/public-api-2.0-reference/storefront/members"
+            },
+            "text": "Members"
+          }, {
+            "anchor": {
+              "href": "https://help.inveterate.com/dev/api-reference-docs/public-api-2.0-reference/storefront/benefits"
+            },
+            "text": "Benefits"
+          }, {
+            "anchor": {
+              "href": "https://help.inveterate.com/dev/api-reference-docs/public-api-2.0-reference/storefront/tiers"
+            },
+            "text": "Tiers"
+          }, {
+            "anchor": {
+              "href": "https://help.inveterate.com/dev/api-reference-docs/public-api-2.0-reference/admin/tiers"
+            },
+            "text": "Tiers"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Did you find what you were looking for here?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "Request Fulfilled; End Session.",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great, glad we could help; reach back out any time!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "55aceaa7-944d-4a6e-a591-c067e1b5a9fb"
+  }, {
+    "intent": "additional help",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Additional Help",
+    "name": "b746dcd0-cde4-4014-9a4c-c7d239fe8119"
+  } ]
+}

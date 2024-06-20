@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "Dev docs",
+    "synonyms": [ "Dev docs", "Developer docs", "developer documentation", "Dev documentation" ],
+    "languageCode": "en"
+  }, {
+    "value": "Help docs",
+    "synonyms": [ "help docs", "Help docs", "Help documentation" ],
+    "languageCode": "en"
+  } ]
+}

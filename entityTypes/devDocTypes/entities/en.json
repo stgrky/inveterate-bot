@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "developer documentation",
+    "synonyms": [ "dev", "dev docs", "dev documentation", "developer docs", "developer documentation" ],
+    "languageCode": "en"
+  }, {
+    "value": "storefront endpoints",
+    "synonyms": [ "store", "storefront", "storefront API", "storefront APIs", "storefront endpoint documentation", "storefront endpoints" ],
+    "languageCode": "en"
+  }, {
+    "value": "administrative endpoints",
+    "synonyms": [ "admin API", "admin API endpoints", "admin endpoint documentation", "admin endpoints", "administrative endpoints" ],
+    "languageCode": "en"
+  }, {
+    "value": "help documentation",
+    "synonyms": [ "help", "help docs", "help documentation" ],
+    "languageCode": "en"
+  } ]
+}

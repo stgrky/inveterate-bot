@@ -1,0 +1,64 @@
+{
+  "name": "1f174657-9abf-4ba7-a51a-0fe3adb556a1",
+  "displayName": "Additional Help",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "You'd like to connect with a human agent, correct?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "unfulfilled request agent escalation",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, let me transfer you now!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Agent Escalation",
+    "name": "ca68b56d-d885-4319-aa3c-2baba0fc8fca"
+  }, {
+    "intent": "NoAdditionalHelpNeeded",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, have a great day and reach back out any time!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "23b0ed83-abc6-4821-a6f5-6c6afeb8b53b"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let's get you transferred to someone who can help!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "c8510bda-db50-4549-8cde-5a9b98d1f19c"
+  }, {
+    "targetFlow": "Agent Escalation",
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let's get you connected with someone" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "ad33af32-5c1e-4d0f-92ab-b1194c01da8a"
+  } ]
+}

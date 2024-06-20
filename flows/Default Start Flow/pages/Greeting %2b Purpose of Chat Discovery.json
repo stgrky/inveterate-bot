@@ -1,0 +1,89 @@
+{
+  "name": "118984ab-080b-4e46-b6dd-be690f53dcf5",
+  "displayName": "Greeting + Purpose of Chat Discovery",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Thank you for reaching out, $session.params.name! Do you have questions regarding our help docs or developer docs?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "options": [ {
+            "text": "Help docs"
+          }, {
+            "text": "Dev docs"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "developer documentation",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Developer Docs Handling",
+    "name": "32adcbb4-788e-4326-8f4a-d48c90154641"
+  }, {
+    "intent": "help documentation",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Help Docs Handling",
+    "name": "3db5d6b8-6c04-419c-a985-5e34e0fd85ed"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't catch that" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "1bce28fc-722a-4626-adb1-afcf3b82b892"
+  }, {
+    "targetFlow": "Agent Escalation",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let's get you over to a live agent who can help further!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "c2deb2ee-2c85-4943-9e6b-a736cabdd9cb"
+  }, {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "You didn't input anything.. try again!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "7cea0618-053a-4227-9c40-4a4dc484915b"
+  }, {
+    "targetFlow": "Agent Escalation",
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I still didn't catch that.. let me transfer you to a live agent!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "55d68cbc-b3e6-4e7c-a1cd-79865db203b1"
+  } ]
+}

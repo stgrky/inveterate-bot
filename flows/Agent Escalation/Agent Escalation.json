@@ -1,0 +1,43 @@
+{
+  "name": "55ebb6d7-ba8d-45f1-b2de-c04de24e58ff",
+  "displayName": "Agent Escalation",
+  "transitionRoutes": [ {
+    "condition": "\"TRUE\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Integration with agent stuff here" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "dc8ed4f4-8909-49dd-a9e4-1f766356eb88"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "111919a7-1493-4eda-93de-d7429d36b977"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "7afa9821-dd45-4af8-b419-09c151486ea7"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "name": "e2a7bcf5-5c39-48a4-8a36-491f2991c562",
+  "displayName": "Admin Endpoints",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Ok here are Inveterate's Admin-facing endpoints:" ]
+      },
+      "languageCode": "en"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "options": [ {
+            "anchor": {
+              "href": "https://help.inveterate.com/dev/api-reference-docs/public-api-2.0-reference/admin/benefits"
+            },
+            "text": "Benefits"
+          }, {
+            "anchor": {
+              "href": "https://help.inveterate.com/dev/api-reference-docs/public-api-2.0-reference/admin/members"
+            },
+            "text": "Members"
+          }, {
+            "anchor": {
+              "href": "https://help.inveterate.com/dev/api-reference-docs/public-api-2.0-reference/admin/merchant"
+            },
+            "text": "Merchant"
+          }, {
+            "anchor": {
+              "href": "https://help.inveterate.com/dev/api-reference-docs/public-api-2.0-reference/admin/tiers"
+            },
+            "text": "Tiers"
+          }, {
+            "anchor": {
+              "href": "https://help.inveterate.com/dev/api-reference-docs/public-api-2.0-reference/admin/webhooks"
+            },
+            "text": "Webhooks"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Did these get you what you need?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "additional help",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Additional Help",
+    "name": "43a9da6e-d504-486f-b33d-df4dd976b6ca"
+  }, {
+    "intent": "Request Fulfilled; End Session.",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great! Glad we could help. Have a great day and reach back out any time!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "b227481e-1c94-4778-8847-ee868d684587"
+  } ]
+}

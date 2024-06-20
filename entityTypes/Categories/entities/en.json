@@ -1,0 +1,23 @@
+{
+  "entities": [ {
+    "value": "Getting Started",
+    "synonyms": [ "Getting Started", "installation", "setup", "setup steps" ],
+    "languageCode": "en"
+  }, {
+    "value": "Program setup",
+    "synonyms": [ "benefit setup", "how to set up benefits", "how to set up the program", "Program setup" ],
+    "languageCode": "en"
+  }, {
+    "value": "Members",
+    "synonyms": [ "member portal", "member profile", "Members" ],
+    "languageCode": "en"
+  }, {
+    "value": "Settings",
+    "synonyms": [ "app settings", "combined benefits", "combining benefits", "merchant settings", "Settings" ],
+    "languageCode": "en"
+  }, {
+    "value": "Documentation Type",
+    "synonyms": [ "Dev docs", "Developer docs", "Developer documentation", "Documentation Type", "help docs", "help documentation" ],
+    "languageCode": "en"
+  } ]
+}

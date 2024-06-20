@@ -1,0 +1,85 @@
+{
+  "name": "c60e548d-30ee-43c8-9637-fb83e69fa49b",
+  "displayName": "Developer Docs Handling",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Great, we'll get you to the right place here! Are you looking for admin or storefront documentation, or do you need something from our legacy documentation?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "options": [ {
+            "text": "Admin"
+          }, {
+            "text": "Storefront"
+          }, {
+            "text": "Legacy docs"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "legacy documentation agent escalation",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, legacy documentation questions are handled by a live agent. Let me transfer you now!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Agent Escalation",
+    "name": "3398560c-063b-4cb8-a853-97ad359fd42b"
+  }, {
+    "intent": "admin API documentation",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok, let's find you the proper admin endpoint you need help with." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Admin Endpoints",
+    "name": "707b7fc4-460f-486c-aad9-f6aedb178abe"
+  }, {
+    "intent": "storefront API documentation",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Storefront Endpoints",
+    "name": "90efdd3e-f1ba-417c-b5e6-46212acee4ca"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't catch that.. please try again!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "d783a596-d00d-4507-85fb-b13fb6a8a6ad"
+  }, {
+    "targetFlow": "Agent Escalation",
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hmm, I still didn't get that. Let me transfer you over to someone who can help further!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "10c9815f-1781-45fb-a330-ef38634fa012"
+  } ]
+}

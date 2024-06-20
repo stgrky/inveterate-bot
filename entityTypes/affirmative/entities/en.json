@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "Yes",
+    "synonyms": [ " Yes", "ya", "yas", "yep", "yes", "Yes", "yes please" ],
+    "languageCode": "en"
+  }, {
+    "value": "Human Now",
+    "synonyms": [ "agent", "Can I speak with a human?", "Do you have a human I can speak with?", "Human", "Human Now", "Is there an agent I can speak with?" ],
+    "languageCode": "en"
+  } ]
+}
